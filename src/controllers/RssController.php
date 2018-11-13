@@ -17,9 +17,9 @@ class RssController
         $rss = '<?xml version="1.0" encoding="utf-8"?>';
         $rss .= '<rss version="2.0">';
             $rss .= '<channel>';
-                $rss .= '<title>RilynEmu</title>';
-                $rss .= '<link>RilynEmu</link>';
-                $rss .= '<description>RilynEmu émulateur Dofus 1.29 développé en JAVA</description>';
+                $rss .= '<title>DofusAPI</title>';
+                $rss .= '<link>DofusAPI</link>';
+                $rss .= '<description>Flux RSS DofusAPI</description>';
                 foreach ($newsRss as $item) {
                     $rss .= '<item>';
                         $rss .= '<guid>' . $item->id . '</guid>';

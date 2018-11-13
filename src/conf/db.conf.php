@@ -5,10 +5,10 @@ return array(
 
 	'mysql' => array(
 		'driver' => 'mysql',
-		'host' => '192.168.99.100',
+		'host' => 'localhost',
 		'user' => 'root',
-		'pass' => 'root',
+		'pass' => '',
 		'dbName' => 'dofusapi',
-		'port' => 32770
+		'port' => 3306
 	)
 );

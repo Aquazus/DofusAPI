@@ -18,6 +18,6 @@
 
 * Database :
   * Edit your account table name in **$table** located at **src/models/Account.php**
-  * Edit fields name in **src/controller/UsersController.php**, search **Edit me** to find the code
+  * Edit fields name in **src/controller/UsersController.php**, search **Edit me** to find the fields to change
   * Collecting personal informations :
     * Edit **cpi** in **src/conf/api.conf.php**

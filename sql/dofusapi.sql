@@ -31,7 +31,7 @@ CREATE TABLE `accounts_informations` (
   `knowGame` text DEFAULT NULL,
   `country` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of accounts_informations
@@ -46,7 +46,7 @@ CREATE TABLE `answers` (
   `answer` varchar(255) DEFAULT NULL,
   `cmntt` enum('de','en','es','fr','it','nl','pt') DEFAULT 'fr',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of answers
@@ -82,10 +82,28 @@ CREATE TABLE `rss` (
   `created_at` timestamp NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of rss
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for alerts
+-- ----------------------------
+DROP TABLE IF EXISTS `alerts`;
+CREATE TABLE `alerts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ignore_versions` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` text DEFAULT NULL,
+  `cmntt` enum('de','en','es','fr','it','nl','pt') DEFAULT 'fr',
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of alerts
 -- ----------------------------
 
 -- ----------------------------

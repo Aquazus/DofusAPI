@@ -4,6 +4,7 @@ use dofus\controllers\RssController;
 use dofus\controllers\UsersController;
 use dofus\controllers\GiftsController;
 use dofus\controllers\ServersController;
+use dofus\controllers\AlertsController;
 use dofus\DatabaseFactory;
 use dofus\models\Accounts;
 use dofus\models\AccountsInformations;
@@ -51,5 +52,6 @@ $app->get('/registration_come_from.{cmntt:[a-zA-Z]+}', UsersController::class . 
 $app->get('/rss/rss.game.{cmntt:[a-zA-Z]+}.xml', RssController::class . ':rss');
 $app->get('/game_actions.l.{cmntt:[a-zA-Z]+}', GiftsController::class . ':gifts');
 $app->get('/serverstatus.{cmntt:[a-zA-Z]+}.xml', ServersController::class . ':serverStatus');
+$app->get('/alert.{cmntt:[a-zA-Z]+}.xml', AlertsController::class . ':alerts');
 
 $app->run();

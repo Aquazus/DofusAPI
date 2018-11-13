@@ -3,7 +3,15 @@
     "authors": [
         {
             "name": "Manghao",
-            "email": "manghao@manghao.fr"
+            "email": "manghao@manghao.fr",
+            "homepage": "https://github.com/Manghao",
+            "role": "Author"
+        },
+        {
+            "name": "Aquazus",
+            "email": "aquazus@gmail.com",
+            "homepage": "https://github.com/Aquazus",
+            "role": "Contributor"
         }
     ],
     "require": {

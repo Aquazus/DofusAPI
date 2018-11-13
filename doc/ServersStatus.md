@@ -24,21 +24,21 @@
 		* visible : Display status above rss news or not :
 			* 0 : rss news are displayed above status
 			* 1 : status are displayed above rss news
-		* cnx : Dysplay if login server is concerned :
+		* cnx : Display if login server is concerned :
 			* 0 : No concerned
 			* 1 : Is concerned
-		* servers : Display server name concerned :
+		* servers : Display concerned server name :
 			* all : All servers are concerned
 			* specific servers : Separate server name by **,** (ex: Jiva, Silvosse, Hecate)
 		* cmntt : Communauty (fr, en, es ...) 
 	* Fields (serverstatus_problems) :
-		* id_status : Id of row in serverstatus table
+		* id_status : Row ID in serverstatus table
 		* event : Event (schedule) of status 
 			* 1 : Problem solved
 			* 2 : Restarting the servers
-		* comment : Comment for event
-		* translated : Doesn't woked in client
+		* comment : Event comment
+		* translated : Doesn't work in client
 			* 0 : Disabled translation of comment
 			* 1 : Enabled translation of comment
 		* created_at : Creation date (autoupdate in creation)
-		* updated_at : Updated date use to display event date (autoupdate)
+		* updated_at : Updated date used to display event date (autoupdate)

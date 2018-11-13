@@ -2,6 +2,7 @@ RewriteEngine On
 
 RewriteRule ^sql(/.*|)$ - [NC,F]
 RewriteRule ^src(/.*|)$ - [NC,F]
+RewriteRule ^doc(/.*|)$ - [NC,F]
 RewriteRule ^vendor(/.*|)$ - [NC,F]
 
 RewriteCond %{REQUEST_FILENAME} !-d

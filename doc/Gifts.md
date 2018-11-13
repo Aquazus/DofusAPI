@@ -8,6 +8,6 @@
 	* Table name : **gifts**
 	* Fields :
 		* description : Description of gift
-		* url : Url to see details in your website
+		* url : URL that will open on click
 		* gift : SWF name without extension in **clips/gifts** in your client folder
-		* cmntt : Communauty (fr, en, es ...)
+		* cmntt : Community (fr, en, es ...)
